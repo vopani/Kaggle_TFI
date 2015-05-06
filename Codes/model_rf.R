@@ -1,5 +1,5 @@
 ## setting working directory
-path <- '/home/rohan/Kaggle/TFI'
+path <- '/Kaggle_TFI'
 setwd(path)
 
 
