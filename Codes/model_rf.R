@@ -9,7 +9,7 @@ library(dummies)
 library(plyr)
 
 
-## loading data
+## loading data (edit the paths)
 train <- read.csv("./Raw/train.csv", stringsAsFactors=F)
 test <- read.csv("./Raw/test.csv", stringsAsFactors=F)
 
