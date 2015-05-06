@@ -71,6 +71,8 @@ result <- log(train$revenue)
 
 ## Random Forest
 source("./Codes/RandomForest_R.R")
+
+# 5-fold cross validation and scoring
 model_rf_1 <- RandomForestRegression_CV(X_train,result,X_test,cv=5,ntree=25,nodesize=5,seed=235,metric="rmse")
 model_rf_2 <- RandomForestRegression_CV(X_train,result,X_test,cv=5,ntree=25,nodesize=5,seed=357,metric="rmse")
 model_rf_3 <- RandomForestRegression_CV(X_train,result,X_test,cv=5,ntree=25,nodesize=5,seed=13,metric="rmse")
